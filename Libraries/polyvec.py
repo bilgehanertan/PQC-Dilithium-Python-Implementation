@@ -107,13 +107,6 @@ def polyvecl_invntt_tomont(polyvecl_v):
     for i in range(L):
         poly_invntt_tomont(polyvecl_v.poly.vec[i])
 
-
-def polyvecl_pointwise_poly_montgomery(polyvecl_r,poly_a,polyvecl_v):
-    for i in range(L):
-        poly_pointwise_montgomery(polyvecl_r.poly.vec[i],poly_a,polyvecl_v.poly.vec[i])
-        
-        
-
 """ /*************************************************
 * Name:        polyvecl_pointwise_acc_montgomery
 *
@@ -126,43 +119,8 @@ def polyvecl_pointwise_poly_montgomery(polyvecl_r,poly_a,polyvecl_v):
 *              - const polyvecl *v: pointer to second input vector
 **************************************************/"""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def polyvecl_pointwise_poly_montgomery(polyvecl_r,poly_a,polyvecl_v):
+    for i in range(L):
+        poly_pointwise_montgomery(polyvecl_r.poly.vec[i],poly_a,polyvecl_v.poly.vec[i])
+        
         
