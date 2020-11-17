@@ -277,65 +277,21 @@ def rej_uniform(a,leng, buf, buflen):
             
     return ctr
 
-
+""" /*************************************************
+* Name:        poly_uniform
+*
+* Description: Sample polynomial with uniformly random coefficients
+*              in [0,Q-1] by performing rejection sampling on the
+*              output stream of SHAKE256(seed|nonce) or AES256CTR(seed,nonce).
+*
+* Arguments:   - poly *a: pointer to output polynomial
+*              - const uint8_t seed[]: byte array with seed of length SEEDBYTES
+*              - uint16_t nonce: 2-byte nonce
+**************************************************/"""
+STREAM128_BLOCKBYTES = SHAKE128_RATE
 POLY_UNIFORM_NBLOCKS = ((768 + STREAM128_BLOCKBYTES - 1)/STREAM128_BLOCKBYTES)
 
+# implementation required!!!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
