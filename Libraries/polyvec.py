@@ -4,11 +4,11 @@ from params import *
 from poly import *
 import numpy as np
 class polyvecLstruct:
-    def __init__(self):
+    def __init__(self,vec):
         self.poly.vec[K]# Poly Lib Implement vector poly vec[L]
         
 class polyvecKstruct:
-    def __init__(self):
+    def __init__(self,vec):
         self.poly.vec[K]# Poly Lib Implement vector poly vec[L]
                 
 """
