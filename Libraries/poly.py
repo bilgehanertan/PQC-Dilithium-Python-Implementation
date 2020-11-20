@@ -11,8 +11,8 @@ from params import *
 import numpy as np
 from reduce import * 
 class poly:
-    def __init__(self):
-        self.coeffs = []# Poly Lib Implement vector poly vec[L]
+    def __init__(self,coeffs):
+        self.coeffs = coeffs# Poly Lib Implement vector poly vec[L]
         
         
 """ /*************************************************
