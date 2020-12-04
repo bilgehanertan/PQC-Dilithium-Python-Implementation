@@ -51,7 +51,8 @@ def polyvec_matrix_pointwise_montgomery(polyvecK, polyvecL, polyvecL2):
     
 def polyvecl_uniform_eta(polyvecL,seed,nonce): # pass seed[SEEDBYTES]
     for i in range(L):
-         poly_uniform_eta(polyvecL.poly.vec[i],seed[SEEDBYTES],L*nonce+i) #nonce++ normali
+         nonce = nonce +1
+         poly_uniform_eta(polyvecL.poly.vec[i],seed[SEEDBYTES],nonce) #nonce++ normali
 
      
 
